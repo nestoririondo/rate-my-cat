@@ -10,7 +10,7 @@ body {
 }
 
 .body {
-  height: calc(100dvh - 7dvh);
+  height: calc(100dvh - 6dvh);
   display: flex;
   flex-direction: column;
   overflow: auto;

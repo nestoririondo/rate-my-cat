@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { SERVER } from "../constants/server";
-import { CAT_API_IMG } from "../constants/catapi";
 import CatImage from "../components/CatImage";
 import "../styles/Scoreboard.css";
 

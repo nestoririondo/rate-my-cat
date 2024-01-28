@@ -21,7 +21,7 @@ const About = () => {
         <p>
           Developed by <a href="http://www.nestoririondo.com">Néstor Iriondo</a>
         </p>
-        <a href="https://github.com/nestoririondo/ratemycat">
+        <a href="https://github.com/nestoririondo/rate-my-cat">
           <img src={githubicon} alt="github icon" />
         </a>
       </div>
