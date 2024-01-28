@@ -10,16 +10,14 @@ body {
 }
 
 .body {
-  height: calc(100dvh - 6dvh);
+  height: calc(100dvh - 7dvh);
   display: flex;
   flex-direction: column;
   overflow: auto;
 }
-.nav-bar {
-  background-color: #fff;
-  height: 6dvh;
-}
+
 .loading {
+  padding: 1rem;
   display: flex;
   justify-content: center;
   font-size: 1.5rem;

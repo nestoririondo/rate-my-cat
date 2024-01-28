@@ -1,5 +1,5 @@
 .rate {
-  height: calc(100dvh - 6dvh);
+  height: calc(100dvh - 7dvh);
   display: flex;
   flex-direction: column;
   h1 {
@@ -14,12 +14,12 @@
     border-radius: 5px;
     padding: 1rem;
     min-height: 50%;
-
     margin: auto;
     .cat-img {
       width: 100%;
       height: auto;
       max-height: 60dvh;
+      min-height: 50dvh;
       border-radius: 5px;
       object-fit: cover;
       object-position: center;
@@ -28,14 +28,7 @@
   .stars {
     display: block;
     padding: 2rem;
-    justify-content: center;
-    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
-  }
-  .loading {
-    display: flex;
-    justify-content: center;
   }
 }
