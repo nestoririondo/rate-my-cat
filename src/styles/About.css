@@ -1,5 +1,5 @@
 .body {
-  height: calc(100vh - 6vh);
+  height: calc(100dvh - 6dvh);
   display: flex;
   flex-direction: column;
   overflow: auto;

@@ -1,5 +1,5 @@
 .rate {
-  height: calc(100vh - 6vh);
+  height: calc(100dvh - 6dvh);
   display: flex;
   flex-direction: column;
   h1 {
@@ -19,7 +19,7 @@
     .cat-img {
       width: 100%;
       height: auto;
-      max-height: 60vh;
+      max-height: 60dvh;
       border-radius: 5px;
       object-fit: cover;
       object-position: center;
