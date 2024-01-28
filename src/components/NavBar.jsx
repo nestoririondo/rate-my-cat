@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BottomNavigation, BottomNavigationAction } from "@mui/material";
-import { FaStar } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa";
 import { FaTrophy } from "react-icons/fa";
 import { FaQuestionCircle } from "react-icons/fa";
 import "../styles/NavBar.css";
@@ -31,11 +31,7 @@ const NavBar = () => {
           handleClick(newValue);
         }}
       >
-        <BottomNavigationAction 
-          label="Rate" 
-          value="Rate" 
-          icon={<FaStar />} 
-        />
+        <BottomNavigationAction label="Rate" value="Rate" icon={<FaHeart />} />
         <BottomNavigationAction
           label="Scoreboard"
           value="Scoreboard"
