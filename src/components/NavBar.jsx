@@ -4,6 +4,7 @@ import { BottomNavigation, BottomNavigationAction } from "@mui/material";
 import { FaStar } from "react-icons/fa";
 import { FaTrophy } from "react-icons/fa";
 import { FaQuestionCircle } from "react-icons/fa";
+import "../styles/NavBar.css";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ const NavBar = () => {
 
   const hadleClick = (e) => {
     if (e.target.innerText === "Rate") {
-      navigate("/rate");
+      navigate("/");
     } else if (e.target.innerText === "Scoreboard") {
       navigate("/scores");
     } else if (e.target.innerText === "About") {

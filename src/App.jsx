@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./views/Home";
 import Rate from "./views/Rate";
 import Scoreboard from "./views/Scoreboard";
 import About from "./views/About";
@@ -10,8 +9,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/rate" element={<Rate />} />
+        <Route path="/" element={<Rate />} />
         <Route path="/scores" element={<Scoreboard />} />
         <Route path="/about" element={<About />} />
       </Routes>

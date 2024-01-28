@@ -40,8 +40,6 @@ const Rate = () => {
       sendRating(rating, cat[0].id, setError);
     }
     fetchCat(setCat, setIsLoading);
-
-    cat && rating && console.log("Rating", rating, "ID", cat[0].id);
   }, [rating]);
 
   return (
