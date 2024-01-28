@@ -11,15 +11,15 @@ const NavBar = () => {
 
   const [value, setValue] = useState(0);
 
-  const hadleClick = (e) => {
-    if (e.target.innerText === "Rate") {
+  const handleClick = (value) => {
+    if (value === "Rate") {
       navigate("/");
-    } else if (e.target.innerText === "Scoreboard") {
+    } else if (value === "Scoreboard") {
       navigate("/scores");
-    } else if (e.target.innerText === "About") {
+    } else if (value === "About") {
       navigate("/about");
     }
-  }
+  };
 
   return (
     <nav className="nav-bar">
@@ -28,11 +28,24 @@ const NavBar = () => {
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
+          handleClick(newValue);
         }}
       >
-        <BottomNavigationAction onClick={(e)=>hadleClick(e)} label="Rate" icon={<FaStar />} />
-        <BottomNavigationAction onClick={(e)=>hadleClick(e)} label="Scoreboard" icon={<FaTrophy />} />
-        <BottomNavigationAction onClick={(e)=>hadleClick(e)} label="About" icon={<FaQuestionCircle />} />
+        <BottomNavigationAction 
+          label="Rate" 
+          value="Rate" 
+          icon={<FaStar />} 
+        />
+        <BottomNavigationAction
+          label="Scoreboard"
+          value="Scoreboard"
+          icon={<FaTrophy />}
+        />
+        <BottomNavigationAction
+          label="About"
+          value="About"
+          icon={<FaQuestionCircle />}
+        />
       </BottomNavigation>
     </nav>
   );
