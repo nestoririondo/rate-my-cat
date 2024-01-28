@@ -1,0 +1,53 @@
+.scoreboard {
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: #282c34;
+  }
+  .cat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    background-color: #f5f5f5;
+    p {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 0;
+      padding: 1rem;
+      color: white;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      min-height: 50%;
+      object-fit: cover;
+      object-position: center;
+      margin: auto;
+      border-radius: 0.5rem;
+    }
+  }
+}
+.cat-card {
+  position: relative;
+  .position {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 5px;
+  }
+  .hearts {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 5px;
+  }
+}
